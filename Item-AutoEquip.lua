@@ -990,6 +990,7 @@ end
 --]]
 
 function AutoEquip:ShowPopup(item)
+	if not ZGV.db.profile.autogear then return end
 	if not item then return end
 	if not self.Popup then self:CreatePopup() end --Popup is saved in self.Popup
 	local F = self.Popup

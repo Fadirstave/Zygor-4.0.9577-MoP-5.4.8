@@ -1126,7 +1126,7 @@ Examples:
 	AddOptionGroup("gear","Gear","zggear")
 	do
 		AddOptionSep()
-		AddOption('autogear',{ type = 'toggle',width="full", _default=true, set = function(i,v) Setter_Simple(i,v)  ZGV.ItemScore.AutoEquip:ToggleButton() end, descStyle="inline"})
+		AddOption('autogear',{ type = 'toggle',width="full", _default=true, set = function(i,v) Setter_Simple(i,v)  ZGV.ItemScore.AutoEquip:ToggleButton() ZGV.ItemScore:RefreshPriorities() end, descStyle="inline"})
 		AddOption('autogearauto',{ type='toggle', width="full", _default=false,
 			disabled=function() return not self.db.profile.autogear end,
 			descStyle="inline",
@@ -1147,6 +1147,8 @@ Examples:
 		end
 		})
 	end
+
+	self.ItemScore:AddPriorityOptions(AddOption)
 
 	AddOptionGroup("modelviewer","ModelViewer","zgmv")
 	do

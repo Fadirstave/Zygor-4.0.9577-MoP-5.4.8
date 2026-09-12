@@ -323,7 +323,7 @@ function ItemScore:SetFilters(playerclass,playerspec,playerlevel)
 	self.playerspec = playerspec or GetSpecialization() or 1 -- Returns nil if < level 10
 	self.playerlevel = playerlevel or UnitLevel("player")
 
-	self.curRuleSet = rules[self.playerclass][self.playerspec]
+	self.curRuleSet = self:BuildPriorityRules(self.playerclass,self.playerspec)
 
 	self:SetDualWield()
 end
