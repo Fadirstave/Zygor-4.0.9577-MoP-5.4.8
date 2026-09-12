@@ -22,7 +22,7 @@ For an existing copy of 4.0.9577, the patch changes only `Options.lua`, `Item-It
 
 ## Behavior and limits
 
-The implementation follows the supplied modern Classic addon's per-specialization weight overrides and immutable base rules. It retains the 2014 addon's default weights and equipment restrictions. Modern default numbers have not been substituted for the original client's rules.
+Custom weights override the original stat weights for each specialization. The addon's original default weights and equipment restrictions are preserved.
 
 Existing hit/expertise cap adjustments, socket estimates, heirloom bonuses, and weapon restrictions still affect recommendations. This is a weighted stat comparison, not a combat simulator or a reforge optimizer. A weight of zero removes that stat's contribution; it does not remove other bonuses on the item.
 
@@ -42,7 +42,3 @@ In-game rendering and equipment actions still need verification in a running 5.4
 - Disable gear suggestions with a popup visible; confirm it closes and stays closed after a bag update.
 - Reset the specialization and confirm the original scoring returns.
 - Check Gear suggestions, Extra Features, and Notifications for display errors.
-
-## Source and publishing
-
-Based on the user's supplied 4.0.9577 archive and installed modern Classic addon. Original author and license metadata remain unchanged. The README and changelog are ready for a repository; no commits or remote publication were performed.
