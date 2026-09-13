@@ -16,9 +16,14 @@ To stop gear popups, turn off **Suggest equipping new gear**. This also stops au
 
 ## Installation
 
-Close WoW or reload after replacing files. Copy the `ZygorGuidesViewer` folder into the 5.4.8 client's `Interface/AddOns` directory. Back up your existing addon first. Do not install this version into modern MoP Classic.
+Back up your current Zygor addon folder before making any changes.
+Extract the new Zygor .zip file.
+Open the extracted folder and copy the new Zygor files.
+Paste them into your World of Warcraft AddOns folder.
+If Windows asks whether you want to replace or overwrite existing files, choose Replace the files in the destination.
+Start World of Warcraft and make sure Zygor is enabled in the AddOns menu.
 
-For an existing copy of 4.0.9577, the patch changes only `Options.lua`, `Item-ItemScore.lua`, `Item-AutoEquip.lua`, and `files.xml`, and adds `Item-GearPriorities.lua`. Other addon files do not need replacing.
+Important: Do not delete your backup until you have confirmed the new version is working correctly.
 
 ## Behavior and limits
 
